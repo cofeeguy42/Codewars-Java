@@ -1,0 +1,7 @@
+public class Clock {
+	//Convert the parameters to miliseconds.
+	public static int Past(int h, int m, int s)
+	{
+		return (h * 3600000) + (m * 60000) + (s * 1000);
+	}
+}
