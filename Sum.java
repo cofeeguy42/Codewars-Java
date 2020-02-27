@@ -1,4 +1,5 @@
 public class Sum {
+	//Add two arrays of integers.
 	public static int arrayPlusArray(int[] arr1, int[] arr2) {
 		int retValue = 0;
 		
