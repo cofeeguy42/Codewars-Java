@@ -41,4 +41,37 @@ public class Kata {
 		
 		return returnValue;
 	}
+	
+	//Compute volume of a cuboid.
+	public static double getVolumeOfCuboid(final double length, final double width, final double height) {
+		return length*width*height;
+	}
+	
+	//Convert number to negative.
+	public static int makeNegative(final int x) {
+		return (x > 0) ? -x : x;
+	}
+	
+	//Reverse the given String.
+	public static String solution(String str) {
+		StringBuffer rawRetValue = new StringBuffer();
+		for(int i = str.length()-1; i >= 0; i--)
+		{
+			rawRetValue.append(str.charAt(i));
+		}
+		return new String(rawRetValue);
+	}
+	
+	//Convert a long into a int array that contains the same numbers that the given long but in reverse order.
+	public static int[] digitize(long n) {
+		String parsedN = new String(Long.toString(n));
+		int[] retValue = new int[parsedN.length()];
+		int aux = 0;
+		for(int i = parsedN.length()-1; i >= 0; i--)
+		{
+			retValue[aux] = Character.getNumericValue(parsedN.charAt(i));
+			aux++;
+		}
+		return retValue;
+	}
 }
